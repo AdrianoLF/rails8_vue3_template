@@ -7,12 +7,13 @@ Template fácil para um app Rails com:
 
 ## Inicialização rápida
 
-- Instale o Ruby 3.2.2
-- Instale as gems (bundle install)
-- Inicie o banco: `rails db:create` e `rails db:migrate`
-- Instale o Node 20
+- Tenha o Ruby 3.2.2 instalado
+- Instale as gems: `bundle install`
+- Tenha o Node 20 instalado
 - Instale os pacotes NPM com yarn `yarn install`
 - Crie o `.env` com `cp .env.example .env` (não é necessário alterar a não ser que queira alguma customização)
+- Faça a build do docker: `docker compose up -d`
+- Inicie o banco: `rails db:create` e `rails db:migrate`
 
 ```bash
 # Inicia tanto o servidor Rails quanto o servidor Vite.js de uma vez
