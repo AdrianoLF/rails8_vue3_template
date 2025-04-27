@@ -18,3 +18,8 @@ group :development, :test do
 end
 
 gem "vite_rails", "~> 3.0"
+
+group :development, :test do
+  gem "foreman"
+  gem "dotenv-rails", require: "dotenv/load"
+end

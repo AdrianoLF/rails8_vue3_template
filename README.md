@@ -1,24 +1,34 @@
-# README
+# Controle de Horas ⏱️
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Template fácil para um app Rails com:
 
-Things you may want to cover:
+- 💎 Ruby on Rails 8
+- ⚡ Vite.js + Vue 3
 
-* Ruby version
+## Inicialização rápida
 
-* System dependencies
+- Instale o Ruby 3.2.2
+- Instale as gems (bundle install)
+- Inicie o banco: `rails db:create` e `rails db:migrate`
+- Instale o Node 20
+- Instale os pacotes NPM com yarn `yarn install`
 
-* Configuration
+```bash
+# Inicia tanto o servidor Rails quanto o servidor Vite.js de uma vez
+bin/dev
+```
 
-* Database creation
+O sistema estará disponível em: [http://localhost:3000](http://localhost:3000)
 
-* Database initialization
+## Estrutura do projeto
 
-* How to run the test suite
+Padrão do Rails.
+Você pode achar os arquivos do Vue em `app\frontend`.
+Arquivo base do VUE: `app\frontend\entrypoints\application.js`
 
-* Services (job queues, cache servers, search engines, etc.)
+## Stack Tecnológica
 
-* Deployment instructions
-
-* ...
+- **Ruby:** 3.2.2
+- **Rails:** 8
+- **Database:** PostgreSQL
+- **Frontend:** Vue 3 gerenciado pelo Vite
