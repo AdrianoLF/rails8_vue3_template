@@ -1,0 +1,12 @@
+services:
+  db:
+    image: postgres:16-alpine
+    environment:
+      POSTGRES_USER: rails
+      POSTGRES_PASSWORD: secret
+      POSTGRES_DB: myapp_development
+    ports: ["5432:5432"]
+    volumes: ["db-data:/var/lib/postgresql/data"]
+
+volumes:
+  db-data:

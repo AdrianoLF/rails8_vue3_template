@@ -1,0 +1,17 @@
+#!/usr/bin/env ruby
+require "fileutils"
+
+# Starts Rails and Vite.js in development mode
+APP_ROOT = File.expand_path("..", __dir__)
+
+def system!(*args)
+  system(*args) || abort("\n== Command #{args} failed ==")
+end
+
+FileUtils.chdir APP_ROOT do
+  puts "== Installing foreman if needed =="
+  system! "gem install foreman" unless system("gem list foreman -i")
+  
+  puts "\n== Starting Vite.js and Rails server =="
+  system({ "RUBY_DEBUG_OPEN" => "true" }, "foreman start -f Procfile.dev")
+end
