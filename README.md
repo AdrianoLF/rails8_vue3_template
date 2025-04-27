@@ -18,6 +18,13 @@ Template fácil para um app Rails com:
 ```bash
 # Inicia tanto o servidor Rails quanto o servidor Vite.js de uma vez
 bin/dev
+
+# Caso encontre o erro de:
+# /usr/bin/env: ‘ruby\r’: No such file or directory
+# /usr/bin/env: use -[v]S to pass options in shebang lines
+# Formate os arquivos e rode o binário novamente:
+dos2unix bin/*
+bin/dev
 ```
 
 O sistema estará disponível em: [http://localhost:3000](http://localhost:3000)
