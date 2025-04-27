@@ -1,4 +1,4 @@
-# Controle de Horas ⏱️
+# Template RAILS 8 + Vue 3 ⏱️
 
 Template fácil para um app Rails com:
 
