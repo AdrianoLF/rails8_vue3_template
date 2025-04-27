@@ -9,12 +9,12 @@ default: &default
 
 development:
   <<: *default
-  database: <%= ENV.fetch("PG_DB_DEV") %>
+  database: <%= ENV.fetch("PG_DB_DEV") { "db_dev" } %>
 
 test:
   <<: *default
-  database: <%= ENV.fetch("PG_DB_TEST") %>
+  database: <%= ENV.fetch("PG_DB_TEST") { "db_test" } %>
 
 production:
   <<: *default
-  database: <%= ENV.fetch("PG_DB_PROD") %>
+  database: <%= ENV.fetch("PG_DB_PROD") { "db_production" } %>

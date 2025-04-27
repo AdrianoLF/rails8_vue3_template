@@ -12,6 +12,7 @@ Template fácil para um app Rails com:
 - Inicie o banco: `rails db:create` e `rails db:migrate`
 - Instale o Node 20
 - Instale os pacotes NPM com yarn `yarn install`
+- Crie o `.env` com `cp .env.example .env` (não é necessário alterar a não ser que queira alguma customização)
 
 ```bash
 # Inicia tanto o servidor Rails quanto o servidor Vite.js de uma vez
